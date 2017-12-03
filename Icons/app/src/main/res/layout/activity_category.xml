@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="educs399.nau.myapplication.CategoryActivity">
+
+    <!--tool bar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Pick a category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <ImageView
+            android:id="@+id/img_action"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+
+            android:layout_margin="5dp"
+            android:layout_row="0"
+
+            app:srcCompat="@drawable/action" />
+
+        <ImageView
+            android:id="@+id/img_alert"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_comm"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/alert" />
+
+        <ImageView
+            android:id="@+id/img_av"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/av" />
+
+        <TextView
+            android:id="@+id/txt_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="Action"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txt_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="Alert"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txt_av"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <ImageView
+            android:id="@+id/img_comm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/communication" />
+
+        <ImageView
+            android:id="@+id/img_devices"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/device" />
+
+        <ImageView
+            android:id="@+id/img_map"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/maps" />
+
+        <TextView
+            android:id="@+id/txt_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Communication"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txt_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Devices"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txt_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Maps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </GridLayout>
+
+</RelativeLayout>
