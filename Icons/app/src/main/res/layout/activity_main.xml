@@ -22,8 +22,11 @@
         android:id="@+id/txt_home_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignEnd="@+id/bttn_play"
+        android:layout_alignRight="@+id/bttn_play"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
         android:text="Icons"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
@@ -31,23 +34,37 @@
         android:id="@+id/txt_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_home_title"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_centerInParent="false"
-        android:layout_marginTop="100dp"
-        android:text="A quiz to learn material UI icons"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:layout_centerVertical="true"
+        android:text="Quiz your knowledge on Material Design UI Icons"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/bttn_play"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/txt_desc"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-
+        android:layout_marginTop="78dp"
         android:text="Play"
         android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bttn_play"
+        android:layout_alignStart="@+id/bttn_play"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/logo" />
 
 </RelativeLayout>
