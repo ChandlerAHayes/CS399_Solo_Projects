@@ -14,16 +14,16 @@ import android.widget.ImageView;
 public class CategoryActivity extends AppCompatActivity {
     //widgets
     ImageView actionImg;
-    ImageView alertImg;
     ImageView avImg;
     ImageView commImg;
+    ImageView contentImg;
     ImageView devicesImg;
     ImageView mapImg;
 
     //constants
     private static final String CATEGORY = "category";
     private static final String ACTION_CATEGORY = "action";
-    private static final String ALERT_CATEGORY = "alert";
+    private static final String CONTENT_CATEGORY = "content";
     private static final String AV_CATEGORY = "av";
     private static final String COMMUNICATION_CATEGORY = "communication";
     private static final String DEVICES_CATEGORY = "devices";
@@ -45,7 +45,8 @@ public class CategoryActivity extends AppCompatActivity {
 
         //initialize widgets
         actionImg = findViewById(R.id.img_action);
-        alertImg = findViewById(R.id.img_alert);
+        contentImg
+                = findViewById(R.id.img_content);
         avImg = findViewById(R.id.img_av);
         commImg = findViewById(R.id.img_comm);
         devicesImg = findViewById(R.id.img_devices);
@@ -61,11 +62,11 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
-        alertImg.setOnClickListener(new View.OnClickListener() {
+        contentImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this, QuizActivity.class);
-                intent.putExtra(CATEGORY, ALERT_CATEGORY);
+                intent.putExtra(CATEGORY, CONTENT_CATEGORY);
                 startActivity(intent);
             }
         });
