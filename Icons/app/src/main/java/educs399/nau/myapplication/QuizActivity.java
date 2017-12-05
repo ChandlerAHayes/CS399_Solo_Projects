@@ -224,7 +224,7 @@ public class QuizActivity extends AppCompatActivity {
         switch (category){
             case "action":
                 list.add(new Icon("accessible", res.getDrawable(R.drawable.ic_accessible)));
-                list.add(new Icon("account box", res.getDrawable(R.drawable.ic_add_alert)));
+                list.add(new Icon("account box", res.getDrawable(R.drawable.ic_account_box)));
                 list.add(new Icon("alarm", res.getDrawable(R.drawable.ic_alarm)));
                 list.add(new Icon("bookmark", res.getDrawable(R.drawable.ic_bookmark)));
                 list.add(new Icon("setting brightness", res.getDrawable(R.drawable.ic_settings_brightness)));
