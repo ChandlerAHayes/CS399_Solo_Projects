@@ -47,9 +47,9 @@ public class QuizActivity extends AppCompatActivity {
     //constants
     private static final String CATEGORY = "category";
     private static final String ACTION_CATEGORY = "action";
-    private static final String ALERT_CATEGORY = "alert";
     private static final String AV_CATEGORY = "av";
     private static final String COMMUNICATION_CATEGORY = "communication";
+    private static final String CONTENT_CATEGORY = "CONTENT";
     private static final String DEVICES_CATEGORY = "devices";
     private static final String MAPS_CATEGORY = "maps";
 
@@ -159,14 +159,14 @@ public class QuizActivity extends AppCompatActivity {
             case ACTION_CATEGORY:
                 titleTxt.setText("Action");
                 break;
-            case ALERT_CATEGORY:
-                titleTxt.setText("Alert");
-                break;
             case AV_CATEGORY:
                 titleTxt.setText("AV");
                 break;
             case COMMUNICATION_CATEGORY:
                 titleTxt.setText("Communication");
+                break;
+            case CONTENT_CATEGORY:
+                titleTxt.setText("Content");
                 break;
             case DEVICES_CATEGORY:
                 titleTxt.setText("Devices");
@@ -234,10 +234,14 @@ public class QuizActivity extends AppCompatActivity {
                 list.add(new Icon("shopping cart", res.getDrawable(R.drawable.ic_shopping_cart)));
                 break;
 
-            case "alert":
-                list.add(new Icon("add alert", res.getDrawable(R.drawable.ic_add_alert)));
-                list.add(new Icon("warning", res.getDrawable(R.drawable.ic_warning)));
-                break;
+            case "content":
+                list.add(new Icon("paste", res.getDrawable(R.drawable.ic_content_paste)));
+                list.add(new Icon("add", res.getDrawable(R.drawable.ic_add)));
+                list.add(new Icon("archive", res.getDrawable(R.drawable.ic_archivep)));
+                list.add(new Icon("cut", res.getDrawable(R.drawable.ic_content_cut)));
+                list.add(new Icon("reply all", res.getDrawable(R.drawable.ic_reply_all)));
+                list.add(new Icon("remove", res.getDrawable(R.drawable.ic_remove)));
+                list.add(new Icon("save", res.getDrawable(R.drawable.ic_save)));
 
             case "av":
                 list.add(new Icon("closed caption", res.getDrawable(R.drawable.ic_closed_caption)));
@@ -277,9 +281,8 @@ public class QuizActivity extends AppCompatActivity {
                 break;
         }
 
-
-
         return list;
+
     }
 
 }

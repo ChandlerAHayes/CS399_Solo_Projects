@@ -54,22 +54,18 @@
             app:srcCompat="@drawable/action" />
 
         <ImageView
-            android:id="@+id/img_alert"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/img_comm"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/alert" />
-
-        <ImageView
             android:id="@+id/img_av"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/av" />
+
+        <ImageView
+            android:id="@+id/img_comm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/communication" />
 
         <TextView
             android:id="@+id/txt_action"
@@ -81,15 +77,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <TextView
-            android:id="@+id/txt_alert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:text="Alert"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-        <TextView
             android:id="@+id/txt_av"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,12 +84,24 @@
             android:text="AV"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
+        <TextView
+            android:id="@+id/txt_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Communication"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
         <ImageView
-            android:id="@+id/img_comm"
+            android:id="@+id/img_content"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="5dp"
-            app:srcCompat="@drawable/communication" />
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_comm"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/content" />
 
         <ImageView
             android:id="@+id/img_devices"
@@ -122,11 +121,12 @@
             app:srcCompat="@drawable/maps" />
 
         <TextView
-            android:id="@+id/txt_comm"
+            android:id="@+id/txt_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Communication"
+            android:layout_marginBottom="5dp"
+            android:text="Content"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <TextView
